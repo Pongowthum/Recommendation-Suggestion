@@ -86,7 +86,6 @@ model.add(Dense(num_labels, activation='softmax'))
 model.compile(loss=categorical_crossentropy,
               optimizer=Adam(),
               metrics=['accuracy'])
-
 model.fit(X_train, train_y,
           batch_size=batch_size,
           epochs=epochs,
